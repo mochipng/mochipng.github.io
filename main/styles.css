@@ -7,10 +7,31 @@ header{
     height:50px;
     background:transparent;
     position:absolute;
+    display:flex;
+    left:50%;
+    transform: translate(-50%);
+    align-items:center;
+}
+
+a{
+    color:white;
+    padding: 0px 20px;
+}
+
+#hero-section{
+    height:30vw;
 }
 
 #hero-video{
     width:100%;
-    left:0;
-    top:0;
+    object-fit:cover;
+}
+
+#hero-text{
+    color:white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:75px;
 }
