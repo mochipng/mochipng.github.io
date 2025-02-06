@@ -19,19 +19,33 @@ a{
 }
 
 #hero-section{
-    height:30vw;
+    height:95vh;
+    justify-content:center;
+    align-items:center;
 }
 
 #hero-video{
+    height:95vh;
     width:100%;
     object-fit:cover;
 }
 
-#hero-text{
+.hero-text{
     color:white;
     position:absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size:75px;
+    text-align:center;
+}
+
+h2.hero-text{
+    color:blue;
+    top:48%;
+    font-size:30px;
+}
+
+.horiz-section{
+    display:flex;
 }
