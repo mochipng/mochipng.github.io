@@ -17,16 +17,6 @@ nav{
     display:flex;
 }
 
-@media screen and (max-width: 650px) {
-    header{
-        background:red;
-    }
-
-    h2.hero-text{
-        !important top:50%;
-    }
-}
-
 a{
     color:white;
     padding: 0px 20px;
@@ -60,8 +50,19 @@ h2.hero-text{
     color:blue;
     top:50%;
     font-size:30px;
+    overflow:visible;
 }
 
 .horiz-section{
     display:flex;
+}
+
+@media screen and (max-width: 650px) {
+    header{
+        background:red;
+    }
+
+    h2.hero-text{
+        top:52%;
+    }
 }
