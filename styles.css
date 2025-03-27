@@ -1,0 +1,62 @@
+body{
+    background-color: rebeccapurple;
+    margin:0;
+    color:antiquewhite;
+}
+
+header{
+    position:relative;
+    top:0px;
+    z-index: 16;
+}
+
+main{
+    display:flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height:100vh;
+
+}
+
+h1{
+    font-size: 200px;
+    text-transform: uppercase;
+
+    line-height: 0.7;
+    margin:0;
+}
+
+h1:nth-last-child(1){
+    align-self: flex-end;
+    font-style: italic;
+    padding-right: 10px;
+    padding-bottom:7px;
+}
+
+#hero_info{
+    font-size: 30px;
+    text-align: center;
+    margin:0px 20vw;
+    
+}
+
+#hero_quote{
+    font-size: 20px;
+    float:right;
+    line-height: 0;
+    margin:0;
+}
+
+
+@media screen and (max-width: 750px) {
+    h1 {
+      font-size: 25vw;
+    }
+}
