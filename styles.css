@@ -80,7 +80,7 @@ h1:nth-last-child(1){
 #hero_quote{
     font-size: 20px;
     float:right;
-    line-height: ;
+    line-height: 0;
     margin:0;
     font-style: italic;
     padding-right: 60px;
@@ -95,7 +95,6 @@ section{
     display:flex;
     flex-flow: column;
     margin:0px 140px;
-    height:200px;
 }
 
 .section_heading{
@@ -120,11 +119,13 @@ h2:nth-child(2){
 .section_info{
     align-self: flex-end;
     text-align: right;
+    margin: 0;
     font-size: 30px;
 }
 
 .section_info p:nth-child(1){
     font-style: italic;
+    line-height: 0;
 }
 
 
