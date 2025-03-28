@@ -1,25 +1,48 @@
 body{
-    background-color: rebeccapurple;
     margin:0;
+    padding:0;
     color:antiquewhite;
+
+    background-image: url(header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header{
-    position:relative;
-    top:0px;
+    display:flex;
+    flex-flow: column;
+    position:sticky;
+    top:40vh;
     z-index: 16;
+    padding-left: 20px;
+    font-size: 25px;
+    gap:20px;
+}
+
+header a{
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+header a:hover{
+    opacity: 1;
+    padding-left:10px;
+}
+
+main, section{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 main{
     display:flex;
     flex-flow: column;
     justify-content: space-between;
-
-    background-image: url(header.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    margin-top: -173px;
 
     height:100vh;
 
@@ -42,16 +65,66 @@ h1:nth-last-child(1){
 
 #hero_info{
     font-size: 30px;
+    align-self: center;
     text-align: center;
-    margin:0px 20vw;
-    
+    max-width: 590px;
+    margin:0 19vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 0px 6px antiquewhite;
+    padding:0px 20px;
+    height:26vh;
+    border-radius: 25px;
+    box-shadow: 0px 0px 80px 40px rgba(0, 0, 0, 0.8);
 }
 
 #hero_quote{
     font-size: 20px;
     float:right;
-    line-height: 0;
+    line-height: ;
     margin:0;
+    font-style: italic;
+    padding-right: 60px;
+}
+
+.divider{
+    margin:60px 100px;
+    border-color: antiquewhite;
+}
+
+section{
+    display:flex;
+    flex-flow: column;
+    margin:0px 140px;
+    height:200px;
+}
+
+.section_heading{
+    display:flex;
+    flex-flow: column;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size:150px;
+
+    line-height: 0.7;
+    margin:0;
+
+    justify-self: center;
+}
+
+h2:nth-child(2){
+    font-style: italic;
+}
+
+.section_info{
+    align-self: flex-end;
+    text-align: right;
+    font-size: 30px;
+}
+
+.section_info p:nth-child(1){
+    font-style: italic;
 }
 
 
