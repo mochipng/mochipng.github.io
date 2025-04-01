@@ -156,6 +156,27 @@ h2:nth-child(2){
     text-align: left;
 }
 
+form{
+    display:grid;
+    grid-auto-flow: column;
+    font-size: 30px;
+    text-align: center;
+    gap:1vw;
+    justify-content: center;
+}
+
+form div {
+    display:flex;
+    flex-flow: column;
+    width: 20vw;
+}
+
+input{
+    height:50px;
+    font-size: 20px;
+    border:0;
+}
+
 @media screen and (max-width: 750px) {
     h1 {
       font-size: 25vw;
