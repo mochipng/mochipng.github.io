@@ -2,11 +2,13 @@
 const translations = {
     en: {
         titles: "Digital artist · web & app developer",
-        button: "한국어"
+        button: "한국어",
+        blog:"My blog",
     },
     ko: {
         titles: "디지털 예술가 · 웹·앱 개발자",
-        button: "English"
+        button: "English",
+        blog: "저의 블로그",
     }
 };
 
