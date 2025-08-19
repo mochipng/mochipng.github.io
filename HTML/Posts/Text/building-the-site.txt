@@ -1,4 +1,4 @@
 title: Building the Site
 date: August(8월) 17, 2025
 
-Test blog post.
+text: Test blog post.

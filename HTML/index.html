@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>MOCHI.PNG</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
 
@@ -17,25 +17,36 @@
 
         <div class="mainsection">
             <div class="minisection sectionone">
-                <img src="Images/pfp.png" class="pfp">
+                <img src="../Images/pfp.png" class="pfp">
                 <div class="info">
-                    <p>텍스트</p>
+                    <p data-i18n="age">17 y.o.</p>
+                    <hr>
+                    <p data-i18n="info">CS student
+                    Freelance artist · dev </p>
+                    <p class="decor">★</p>
                 </div>
                 <p class="infotext">리리 · Lily <br> ENG & KR</p>
             </div>
 
             <div class="minisection">
-                <p>텍스트</p>
+                <p data-i18n="projtitle">Current Project</p>
+                <div class="project">
+                    <div>
+                        <p>Personal Website</p>
+                        <p>Blah</p>
+                    </div>
+                    <img src="../Images/current.png" class="projectimg">
+                </div>
             </div>
 
             <div class="minisection transp">
-                <img src="Images/hachi.png">
+                <img src="../Images/hachi.png">
             </div>
 
             <div class="minisection last">
-                <p data-i18n="blog">My blog</p>
+                <p data-i18n="blog">My Blog</p>
                 <ul>
-                    {{posts}}
+                    {posts}
                     </ul>
             </div>
 
@@ -43,6 +54,6 @@
 
         <h3>mochi.png 2025</h3>
 
-        <script src="functions.js"></script>
+        <script src="../functions.js"></script>
     </body>
 </html>

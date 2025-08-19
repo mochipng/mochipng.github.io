@@ -17,7 +17,7 @@ html{
 }
 
 p, h1{
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 20px var(--secondary-color);
 }
 
 body{
@@ -80,19 +80,20 @@ body{
 }
 
 .info{
-    background-color:linear-gradient(var(--accent-color), var(--secondary-color), var(--primary-color));
+    background-image:linear-gradient(var(--accent-color), var(--secondary-color), var(--primary-color));
     margin-left:20px;
     border-radius: 10px;
     grid-row: 1 / span 2;
     grid-column: 2 / span 2;
-    box-shadow: var(--secondary-color) 0px 0px 8px 2px;
+    box-shadow: inset var(--secondary-color) 0px 0px 8px 2px; ;
+    line-height: 1.5rem;
 }
 
 .infotext{
     grid-column: 1;
     grid-row: 2;
     line-height: 1.2rem;
-    color:var(--text2-color)
+    color:var(--text2-color);
 }
 
 .sectionone {
@@ -100,7 +101,7 @@ body{
     display:grid;
     grid-auto-flow: column;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr, 2fr);
     padding:25px;
 }
 
@@ -123,6 +124,12 @@ h1{
     padding:5px;
     line-height: 5rem;
     color:var(--text2-color)
+}
+
+hr{
+    width:80%;
+    border:1px solid white;
+    border-radius: 10px;
 }
 
 .headtitle p{
@@ -183,14 +190,14 @@ h1{
     }
 }
 
-button{
+#langToggle{
     width:120px;
     height:60px;
     border-radius: 15px;
     border-width: 0;
     font-family: cute;
     font-size: 1.5rem;
-    position:absolute;
+    position:fixed;
 
     background-color: lightgray;
     color:gray;
@@ -207,4 +214,31 @@ button:hover{
 h3{
     color:lightgray;
     justify-self: center;
+    margin-top:150px;
+}
+
+.decor{
+    line-height: 0rem;
+    padding:0;
+    font-size: 0.8rem;
+}
+
+.project{
+    background-image:linear-gradient(var(--accent-color), var(--secondary-color), var(--primary-color));
+    box-shadow: inset var(--secondary-color) 0px 0px 8px 2px;
+    display:flex;
+    height:100px;
+    justify-content: space-between;
+    padding:20px;
+    margin:20px;
+    align-items: center;
+    border-radius:10px;
+
+    text-align: left;
+}
+
+.projectimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
